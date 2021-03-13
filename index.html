@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="js">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>とある大学生のサイト</title>
+  </head>
+  <body class="bg-light">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">HOME</a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#column">特徴</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Flex">お客様の声</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#tab">タブ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Embeds" tabindex="-1" aria-disabled="true">YouTube</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#modal" tabindex="-1" aria-disabled="true">よくある質問</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#card" tabindex="-1" aria-disabled="true">実績</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#accordion" tabindex="-1" aria-disabled="true">よくない質問</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contactform" tabindex="-1" aria-disabled="true">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- スライドショー -->
+    <div class="keyvisual">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/img1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HTML/CSS</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bootstrap</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Programing</h5>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container bg-white py-5 my-5">
+      <!-- Bootstrapの特徴 -->
+      <div id="column">
+        <h2 class="text-center py-3">特徴</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <img class="img-fluid" src="img/img4.jpg" alt="">
+        </div>
+        <div class="col-md-4 col-12">
+          <img class="img-fluid" src="img/img5.jpg" alt="">
+        </div>
+        <div class="col-md-4 col-12">
+          <img class="img-fluid" src="img/img6.jpg" alt="">
+        </div>
+        <h3 class="text-center">特徴は大学生であるということです。</h3>
+      </div>
+
+      <!--お客様の声-->
+      <div id="Flex">
+        <h2 class="text-center py-3">お役様の声</h2>
+      </div>
+      <div class="d-flex flex-wrap-reverse justfy-content-center">
+        <div class="col-md-6 col-12 p-0 align-self-center h3 p-4">
+          Hi, he is a univetsity student.Nice to meet you.
+        </div>
+        <div class="col-md-6 col-12 p-0 align-self-center">
+          <img class="img-fluid" src="img/img7.jpg" alt="">
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justfy-content-center">
+        <div class="col-md-6 col-12 p-0 align-self-center">
+          <img class="img-fluid" src="img/img8.jpg" alt="">
+        </div>
+        <div class="col-md-6 col-12 p-0 align-self-center h3 p-4">
+          Hi, I'm 20 years old. It's joking.
+        </div>
+      </div>
+
+    <!-- bootstrapのタブ -->
+    <div class="tab">
+      <div id="tab">
+        <h2 class="text-center py-3">タブ</h2>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item col-4 p-0" role="presentation">
+          <a class="nav-link active text-center" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">年齢</a>
+        </li>
+        <li class="nav-item col-4 p-0" role="presentation">
+          <a class="nav-link text-center" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">職業</a>
+        </li>
+        <li class="nav-item col-4 p-0" role="presentation">
+          <a class="nav-link text-center" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">出生地</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="col-md-8 col-12 my-5 mx-auto">
+            年齢（ねんれい）とは出生からの経過年数。齢（よわい）。
+            <p>出典: フリー百科事典『ウィキペディア（Wikipedia）』</p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="col-md-8 col-12 my-5 mx-auto">
+            Human being
+          </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="col-md-8 col-12 my-5 mx-auto">
+            Japan
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- YouTubeの動画 -->
+      <div id="Embedsb">
+        <h2 class="text-center py-3">YouTube</h2>
+      </div>
+      <div class="ratio ratio-16x9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FD9X71Y3XxA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> 
+
+      <!-- よくある質問 -->
+      <div id="modal">
+        <h2 class="text-center py-3">よくある質問</h2>
+      </div>
+      <div class="row">
+
+        <!-- 1つ目の質問 -->
+        <div class="col-6 pt-3">
+          <!-- Button trigger modal -->
+          <div type="button" class="text-center text-dark border p-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            本当に人間なのですか？
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel1">何ヶ月ぐらい勉強すれば稼げるようになりますか？</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 知りません
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2つ目の質問 -->
+        <div class="col-6 pt-3">
+          <!-- Button trigger modal -->
+          <div type="button" class="text-center text-dark border p-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            どこでトイレをしますか？
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel2">どこでトイレをしますか？</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 トイレです
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        <!--3つ目の質問 -->
+        <div class="col-6 pt-3">
+          <!-- Button trigger modal -->
+          <div type="button" class="text-center text-dark border p-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            今何していますか？
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel3">今何していますか？</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 なんでしょうね
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4つ目の質問 -->
+        <div class="col-6 pt-3">
+          <!-- Button trigger modal -->
+          <div type="button" class="text-center text-dark border p-3" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+            あなたはクズですか？
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel4">あなたはクズですか？</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 その質問には答えられません
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- よくある質問 -->
+      <div id="card">
+        <h2 class="text-center py-3">実績</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <div class="card">
+            <img src="img/img9.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Github</h5>
+              <p class="card-text">GitHubPagesを用いて、とてもとても簡単な何かを公開しました。</p>
+              <a href="https://dashubei.github.io/test/" class="btn btn-primary">見てみる</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="card">
+            <img src="img/img10.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">大学生</h5>
+              <p class="card-text">学習をしております。最近はYouTubeで良い動画が増えましたね。</p>
+              <a href="https://www.youtube.com/watch?v=FD9X71Y3XxA" class="btn btn-primary">見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="card">
+            <img src="img/img11.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Twitter</h5>
+              <p class="card-text">今はもうやっていません。</p>
+              <a href="https://twitter.com/TwitterJP?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="btn btn-primary">Twitterを見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- よくない質問 -->
+      <div id="accordion">
+        <h2 class="text-center py-3">よくない質問</h2>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              おいお前まだ生きていたのか？
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>それはひどくないですかねぇ。</strong>ところであなたはなぜ生きているのですか？
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              お前にやる飯はねぇけど何食うの？
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>え？！ないんですか！！</strong>では、あなたでも頂きましょうか？
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              今日は雨だから君は外で寝てくれるかな？
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>あ、わかりました。</strong>では中からしっかりと戸締まりしてくださいね。外から火をつけるので♪
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- お問い合わせ -->
+      <div id="contactform">
+        <h2 class="text-center py-3">お問い合わせ</h2>
+      </div>
+      <form class="row g-3 needs-validation col-8 mx-auto" novalidate>
+        <div class="col-12 mb-3">
+          <label for="validationCustom01" class="form-label">苗字</label>
+          <input type="text" class="form-control" id="validationCustom01" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            苗字を入れてください。
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <label for="validationCustom02" class="form-label">名前</label>
+          <input type="text" class="form-control" id="validationCustom02" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            名前を入れてください。
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <label for="validationCustom04" class="form-label">住所</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled>選択して下さい。</option>
+            <option>新潟県</option>
+            <option>東京都</option>
+            <option>大阪府</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              同意する
+            </label>
+            <div class="invalid-feedback">
+              同意するにチェックが入っていません。
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">送信</button>
+        </div>
+      </form>
+      <script>
+        (function () {
+          'use strict'
+
+          var forms = document.querySelectorAll('.needs-validation')
+
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+               event.preventDefault()
+                event.stopPropagation()
+              }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+      </script>
+    </div>
+    <fotter class="bg-white">
+      <div class="container bg-white">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="py-4">
+              <h4 class="d-inline-block py-3 border-bottom border-info">Profile</h4>
+            </div>
+            <div class="mx-5">
+              <img class="img-fluid rounded-circle" src="img/img12.jpg" alt="">
+            </div>
+            <p class="text-center">
+              とある大学生です。私は日本生まれ日本育ちです。生まれてから一度もふざけたことはありません。
+            </p>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="py-4">
+              <h4 class="d-inline-block py-3 border-bottom border-info">Portfolio</h4>
+            </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="https://github.com/dashubei">GitHub</a></li>
+                <li class="list-group-item"><a href="https://dashubei.github.io/test/">PortfolioSite</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="py-4">
+              <h4 class="d-inline-block py-3 border-bottom border-info">Profile</h4>
+            </div>
+            <a class="twitter-timeline" data-lang="ja" data-height="500" data-theme="light" href="https://twitter.com/TwitterJP?ref_src=twsrc%5Etfw">Tweets by TwitterJP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-dark text-white text-center p-3">
+        Copyright - taiki kita, 2021 All Rights Reserved.
+      </div>
+
+    </fotter>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> 
+  </body>
+</html>
